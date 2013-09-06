@@ -1,0 +1,17 @@
+Main\BlogBundle\Entity\Post:
+    type: entity
+    table: null
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        title:
+            type: string
+            length: '250'
+        body:
+            type: text
+        published:
+            type: datetime
+    lifecycleCallbacks: {  }
