@@ -1,0 +1,26 @@
+TestCompany\TestBundle\Entity\Company:
+    type: entity
+    table: null
+    repositoryClass: TestCompany\TestBundle\Entity\CompanyRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        companyName:
+            type: string
+            length: 255
+            column: company_name
+        address:
+            type: string
+            length: 255
+        ownerName:
+            type: string
+            length: '150'
+            column: owner_name
+        status:
+            type: boolean
+        created:
+            type: datetime
+    lifecycleCallbacks: {  }
