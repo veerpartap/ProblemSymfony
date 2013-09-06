@@ -1,3 +1,7 @@
+test_company_test:
+    resource: "@TestCompanyTestBundle/Resources/config/routing.yml"
+    prefix:   /
+
 main_blog:
     resource: "@MainBlogBundle/Resources/config/routing.yml"
     prefix:   /
