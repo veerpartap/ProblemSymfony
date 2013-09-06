@@ -1,3 +1,6 @@
 test_company_test_homepage:
     pattern:  /hello/{name}
     defaults: { _controller: TestCompanyTestBundle:Default:index }
+TestCompanyTestBundle_company:
+    resource: "@TestCompanyTestBundle/Resources/config/routing/company.yml"
+    prefix:   /company
