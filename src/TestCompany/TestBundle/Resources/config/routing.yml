@@ -4,3 +4,6 @@ test_company_test_homepage:
 TestCompanyTestBundle_company:
     resource: "@TestCompanyTestBundle/Resources/config/routing/company.yml"
     prefix:   /company
+TestCompanyTestBundle_user:
+    resource: "@TestCompanyTestBundle/Resources/config/routing/user.yml"
+    prefix:   /user
