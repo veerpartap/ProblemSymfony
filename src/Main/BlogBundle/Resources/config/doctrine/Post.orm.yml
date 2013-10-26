@@ -1,6 +1,6 @@
 Main\BlogBundle\Entity\Post:
     type: entity
-    table: null
+    table: posts
     fields:
         id:
             type: integer
