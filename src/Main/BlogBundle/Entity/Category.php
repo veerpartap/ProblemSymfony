@@ -3,6 +3,7 @@
 namespace Main\BlogBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Category
@@ -26,8 +27,7 @@ class Category
 
     public function __construct()
     {
-        //$this->products = new ArrayCollection();
-        $this->products[] = "";
+        $this->products = new ArrayCollection();
     }
 
     /**
@@ -72,7 +72,7 @@ class Category
     public function addProduct(\Main\BlogBundle\Entity\Product $products)
     {
         $this->products[] = $products;
-    
+
         return $this;
     }
 
@@ -89,10 +89,15 @@ class Category
     /**
      * Get products
      *
-     * @return \Doctrine\Common\Collections\Collection 
+     * @return \Doctrine\Common\Collections\Collection
      */
     public function getProducts()
     {
         return $this->products;
+    }
+
+    public function __toString()
+    {
+        return $this->name;
     }
 }
